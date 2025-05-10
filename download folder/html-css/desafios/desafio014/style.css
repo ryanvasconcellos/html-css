@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 35px;
+}
+
+caption{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+th, td, tr{
+border: 1px solid black;
+padding: 10px;
+}
+
+td#num{
+text-align: center;
+}
+
+th#rodape{
+background-color: rgb(94, 94, 94, 0.801);
+color: white;
+text-align: left;
+}
+
+th#cabeçalho{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(94, 94, 94, 0.801);
+    color: white;
+}
+
+.rodap{
+    background-color: rgb(94, 94, 94, 0.801);
+    color: white;
+}

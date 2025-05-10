@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Na noite de terça-feira, para quase 40 mil pessoas na Neo Química Arena, o Timão saiu de um início empolgante para um fim frustrante, com o América de Cali se impondo e atuando à vontade em Itaquera para conquistar um valioso empate por 1 a 1, em duelo pela quarta rodada da fase de grupos.</p>
+
+            <p>Do gol de Memphis às chances criadas no primeiro tempo, a equipe apresentou cansaço, mesmo com o elenco rodado, perdeu intensidade e viu o América controlar o jogo à sua maneira com a bola e com a cera. A vaga direta às oitavas da Sul-Americana ficou mais distante.</p>
+
+            <p>Para encarar o América, Dorival Júnior investiu novamente em duas linhas de quatro homens, com André Carrillo aberto pela direita e Breno Bidon pela esquerda. Depois de um susto no início, o time começou a encontrar espaços com a movimentação fluída de Memphis e Yuri Alberto.</p>
+
+            <p>O holandês, melhor do time em campo durante os 90 minutos, deu grande passe após passar pela marcação e cedeu chance a Yuri Alberto, que parou no goleiro Soto. Aos 18 minutos, o camisa 10 quem foi lançado e abriu o placar com categoria.</p>
+
+            <p>Em um dos pontos positivos da escalação, Maycon mostrou a qualidade do passe e saiu jogando curto com Yuri Alberto. Quando teve espaço, lançou Memphis, que carregou a bola, balançou a marcação de dois rivais e chutou de fora da área para fazer 1 a 0.</p>
+
+            <p>O gol poderia sentenciar o panorama positivo para o Corinthians, necessitado da vitória para subir ao segundo lugar do Grupo C. Porém, foi o América quem se soltou e passou a ficar mais à vontade. No fim, os colombianos terminaram com 54% de posse de bola.</p>
+
+            <p>O Corinthians baixou as linhas e buscava contra-ataques. Nessa estratégia, José Martínez era um elemento para fazer a transição ofensiva. Porém, o venezuelano sentiu problema físico e obrigou Dorival a lançar Charles ainda no primeiro tempo.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
